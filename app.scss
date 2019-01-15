@@ -1,1 +1,8 @@
 @import "~bulma";
+
+// Add elements to build the HTML outline but without modifying the content flow.
+.html5outline {
+    height: 0;
+    width: 0;
+    text-indent: -200vh;
+}
