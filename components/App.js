@@ -1,6 +1,7 @@
 import React, { Fragment } from 'react';
 import { Navbar } from './bulma-react/Navbar';
 import { Column, Columns } from './bulma-react/Columns';
+import { SocialIcons } from './SocialIcons'
 
 export class App extends React.Component {
   hasSidebar () {
@@ -43,12 +44,14 @@ export class App extends React.Component {
 
   render () {
     const sidebar = this.sidebarContent()
+    const socialIcons = <SocialIcons patreon="https://www.patreon.com/wowbench" />;
+
     return (
       <>
         <h1 className="html5outline">WoWBench</h1>
         <section>
           <h1 className="html5outline">Navigation</h1>
-          <Navbar brand="WoWBench"/>
+          <Navbar brand="WoWBench" navbarEnd={socialIcons} />
         </section>
         <section className="app">
           <div className="container">
