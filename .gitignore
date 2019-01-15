@@ -1,0 +1,12 @@
+# Tooling
+package-lock.json
+
+# Dependencies.
+node_modules/
+.next/
+
+# IDE's
+.idea/
+
+# OS
+.DS_Store
