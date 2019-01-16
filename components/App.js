@@ -44,7 +44,10 @@ export class App extends React.Component {
 
   render () {
     const sidebar = this.sidebarContent()
-    const socialIcons = <SocialIcons patreon="https://www.patreon.com/wowbench" />;
+    const socialIcons = <SocialIcons
+      patreon="https://www.patreon.com/wowbench"
+      github="https://github.com/WoWBench/desktop"
+    />;
 
     return (
       <>
