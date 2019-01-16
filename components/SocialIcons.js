@@ -1,4 +1,6 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { NavbarItem } from './bulma-react/Navbar/Item';
+
 import * as React from 'react'
 
 import { faPatreon, faGithub } from '@fortawesome/free-brands-svg-icons';
@@ -11,14 +13,18 @@ export class SocialIcons extends React.Component {
   github() {
     let url = this.getSocialUrl('github');
     if (url) {
-      return <a rel="author" href={url}><FontAwesomeIcon icon={faGithub} size="1x" /></a>;
+      return <NavbarItem url={url} target="_blank">
+        <FontAwesomeIcon icon={faGithub} size="1x" />
+      </NavbarItem>;
     }
   }
 
   patreon () {
     let url = this.getSocialUrl('patreon');
     if (url) {
-      return <a rel="author" href={url}><FontAwesomeIcon icon={faPatreon} size="1x" /></a>;
+      return <NavbarItem url={url} target="_blank">
+        <FontAwesomeIcon icon={faPatreon} size="1x" />
+      </NavbarItem>;
     }
   }
 
